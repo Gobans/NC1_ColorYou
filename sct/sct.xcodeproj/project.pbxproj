@@ -24,6 +24,7 @@
 		919CECD8281B938600485731 /* TypingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CECD7281B938600485731 /* TypingScene.swift */; };
 		91B44945281BC4C400D8BF73 /* LottieOpenDoor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B44944281BC4C400D8BF73 /* LottieOpenDoor.swift */; };
 		91B4494C281BC7E200D8BF73 /* OpenDoor.json in Resources */ = {isa = PBXBuildFile; fileRef = 91B4494B281BC7E200D8BF73 /* OpenDoor.json */; };
+		91B4494E281BE1A200D8BF73 /* ComponentStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B4494D281BE1A200D8BF73 /* ComponentStyle.swift */; };
 		91DF69F8281A1E27004FEC2E /* sctApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DF69F7281A1E27004FEC2E /* sctApp.swift */; };
 		91DF69FA281A1E27004FEC2E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DF69F9281A1E27004FEC2E /* ContentView.swift */; };
 		91DF69FC281A1E28004FEC2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91DF69FB281A1E28004FEC2E /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 		919CECD7281B938600485731 /* TypingScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypingScene.swift; sourceTree = "<group>"; };
 		91B44944281BC4C400D8BF73 /* LottieOpenDoor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieOpenDoor.swift; sourceTree = "<group>"; };
 		91B4494B281BC7E200D8BF73 /* OpenDoor.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = OpenDoor.json; path = ../../../../../../Downloads/OpenDoor.json; sourceTree = "<group>"; };
+		91B4494D281BE1A200D8BF73 /* ComponentStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentStyle.swift; sourceTree = "<group>"; };
 		91DF69F4281A1E27004FEC2E /* sct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sct.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91DF69F7281A1E27004FEC2E /* sctApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sctApp.swift; sourceTree = "<group>"; };
 		91DF69F9281A1E27004FEC2E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				91B44944281BC4C400D8BF73 /* LottieOpenDoor.swift */,
 				919CECD7281B938600485731 /* TypingScene.swift */,
 				91B4494B281BC7E200D8BF73 /* OpenDoor.json */,
+				91B4494D281BE1A200D8BF73 /* ComponentStyle.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				919CECBB281B668600485731 /* rainView.swift in Sources */,
 				919CECC3281B66F800485731 /* streetView.swift in Sources */,
 				919CECBF281B66CB00485731 /* waveView.swift in Sources */,
+				91B4494E281BE1A200D8BF73 /* ComponentStyle.swift in Sources */,
 				919CECBD281B66AB00485731 /* typingView.swift in Sources */,
 				919CECCD281B6A8300485731 /* resultView.swift in Sources */,
 				919CECB7281B665E00485731 /* IntroView.swift in Sources */,
