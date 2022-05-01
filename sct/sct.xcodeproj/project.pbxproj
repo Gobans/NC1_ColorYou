@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		913BBC38281D1DFC0086E255 /* ComponetModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913BBC37281D1DFC0086E255 /* ComponetModifier.swift */; };
+		913BBC3C281D24CD0086E255 /* LottieStreet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913BBC3B281D24CD0086E255 /* LottieStreet.swift */; };
+		913BBC40281D252A0086E255 /* Street.json in Resources */ = {isa = PBXBuildFile; fileRef = 913BBC3F281D252A0086E255 /* Street.json */; };
+		913BBC42281D26C20086E255 /* LottieWhale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913BBC41281D26C20086E255 /* LottieWhale.swift */; };
+		913BBC44281D27060086E255 /* Whale.json in Resources */ = {isa = PBXBuildFile; fileRef = 913BBC43281D27060086E255 /* Whale.json */; };
+		913BBC46281D37200086E255 /* LottieRain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913BBC45281D37200086E255 /* LottieRain.swift */; };
+		913BBC48281D37410086E255 /* Rain.json in Resources */ = {isa = PBXBuildFile; fileRef = 913BBC47281D37410086E255 /* Rain.json */; };
 		919CECB7281B665E00485731 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CECB6281B665E00485731 /* IntroView.swift */; };
 		919CECB9281B667900485731 /* startView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CECB8281B667900485731 /* startView.swift */; };
 		919CECBB281B668600485731 /* rainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CECBA281B668600485731 /* rainView.swift */; };
@@ -14,7 +21,7 @@
 		919CECBF281B66CB00485731 /* waveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CECBE281B66CB00485731 /* waveView.swift */; };
 		919CECC1281B66D400485731 /* doorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CECC0281B66D400485731 /* doorView.swift */; };
 		919CECC3281B66F800485731 /* streetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CECC2281B66F800485731 /* streetView.swift */; };
-		919CECC5281B670B00485731 /* seaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CECC4281B670B00485731 /* seaView.swift */; };
+		919CECC5281B670B00485731 /* whaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CECC4281B670B00485731 /* whaleView.swift */; };
 		919CECC7281B671900485731 /* burningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CECC6281B671900485731 /* burningView.swift */; };
 		919CECC9281B6A6700485731 /* bubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CECC8281B6A6700485731 /* bubbleView.swift */; };
 		919CECCB281B6A7B00485731 /* nameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CECCA281B6A7B00485731 /* nameView.swift */; };
@@ -29,9 +36,21 @@
 		91DF69FA281A1E27004FEC2E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DF69F9281A1E27004FEC2E /* ContentView.swift */; };
 		91DF69FC281A1E28004FEC2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91DF69FB281A1E28004FEC2E /* Assets.xcassets */; };
 		91DF69FF281A1E28004FEC2E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91DF69FE281A1E28004FEC2E /* Preview Assets.xcassets */; };
+		91F134EF281D828F00D519DE /* LottieBeach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F134EE281D828F00D519DE /* LottieBeach.swift */; };
+		91F134F1281D82D600D519DE /* Beach.json in Resources */ = {isa = PBXBuildFile; fileRef = 91F134F0281D82D600D519DE /* Beach.json */; };
+		91F134F3281D864900D519DE /* LottieCircleWave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F134F2281D864900D519DE /* LottieCircleWave.swift */; };
+		91F134F5281D869100D519DE /* CircleWave.json in Resources */ = {isa = PBXBuildFile; fileRef = 91F134F4281D869100D519DE /* CircleWave.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		913BBC37281D1DFC0086E255 /* ComponetModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponetModifier.swift; sourceTree = "<group>"; };
+		913BBC3A281D24BB0086E255 /* OpenDoor.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = OpenDoor.json; sourceTree = "<group>"; };
+		913BBC3B281D24CD0086E255 /* LottieStreet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieStreet.swift; sourceTree = "<group>"; };
+		913BBC3F281D252A0086E255 /* Street.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Street.json; path = ../../../../../../../Downloads/Street.json; sourceTree = "<group>"; };
+		913BBC41281D26C20086E255 /* LottieWhale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieWhale.swift; sourceTree = "<group>"; };
+		913BBC43281D27060086E255 /* Whale.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Whale.json; path = ../../../../../../../Downloads/Whale.json; sourceTree = "<group>"; };
+		913BBC45281D37200086E255 /* LottieRain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieRain.swift; sourceTree = "<group>"; };
+		913BBC47281D37410086E255 /* Rain.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Rain.json; path = ../../../../../../../Downloads/Rain.json; sourceTree = "<group>"; };
 		919CECB6281B665E00485731 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
 		919CECB8281B667900485731 /* startView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = startView.swift; sourceTree = "<group>"; };
 		919CECBA281B668600485731 /* rainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rainView.swift; sourceTree = "<group>"; };
@@ -39,7 +58,7 @@
 		919CECBE281B66CB00485731 /* waveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = waveView.swift; sourceTree = "<group>"; };
 		919CECC0281B66D400485731 /* doorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = doorView.swift; sourceTree = "<group>"; };
 		919CECC2281B66F800485731 /* streetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = streetView.swift; sourceTree = "<group>"; };
-		919CECC4281B670B00485731 /* seaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = seaView.swift; sourceTree = "<group>"; };
+		919CECC4281B670B00485731 /* whaleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whaleView.swift; sourceTree = "<group>"; };
 		919CECC6281B671900485731 /* burningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = burningView.swift; sourceTree = "<group>"; };
 		919CECC8281B6A6700485731 /* bubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bubbleView.swift; sourceTree = "<group>"; };
 		919CECCA281B6A7B00485731 /* nameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nameView.swift; sourceTree = "<group>"; };
@@ -54,6 +73,10 @@
 		91DF69F9281A1E27004FEC2E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		91DF69FB281A1E28004FEC2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91DF69FE281A1E28004FEC2E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		91F134EE281D828F00D519DE /* LottieBeach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieBeach.swift; sourceTree = "<group>"; };
+		91F134F0281D82D600D519DE /* Beach.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Beach.json; path = ../../../../../../../Downloads/Beach.json; sourceTree = "<group>"; };
+		91F134F2281D864900D519DE /* LottieCircleWave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieCircleWave.swift; sourceTree = "<group>"; };
+		91F134F4281D869100D519DE /* CircleWave.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = CircleWave.json; path = ../../../../../../../Downloads/CircleWave.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +91,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		913BBC39281D24B30086E255 /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				91F134F2281D864900D519DE /* LottieCircleWave.swift */,
+				91F134F4281D869100D519DE /* CircleWave.json */,
+				91B44944281BC4C400D8BF73 /* LottieOpenDoor.swift */,
+				913BBC3A281D24BB0086E255 /* OpenDoor.json */,
+				913BBC3B281D24CD0086E255 /* LottieStreet.swift */,
+				913BBC3F281D252A0086E255 /* Street.json */,
+				913BBC41281D26C20086E255 /* LottieWhale.swift */,
+				913BBC43281D27060086E255 /* Whale.json */,
+				913BBC45281D37200086E255 /* LottieRain.swift */,
+				913BBC47281D37410086E255 /* Rain.json */,
+				91F134EE281D828F00D519DE /* LottieBeach.swift */,
+				91F134F0281D82D600D519DE /* Beach.json */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
 		919CECB5281B661500485731 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -78,7 +120,7 @@
 				919CECBE281B66CB00485731 /* waveView.swift */,
 				919CECC0281B66D400485731 /* doorView.swift */,
 				919CECC2281B66F800485731 /* streetView.swift */,
-				919CECC4281B670B00485731 /* seaView.swift */,
+				919CECC4281B670B00485731 /* whaleView.swift */,
 				919CECC6281B671900485731 /* burningView.swift */,
 				919CECC8281B6A6700485731 /* bubbleView.swift */,
 				919CECCA281B6A7B00485731 /* nameView.swift */,
@@ -90,11 +132,12 @@
 		919CECD1281B80E800485731 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				913BBC39281D24B30086E255 /* Lottie */,
 				919CECD2281B811700485731 /* BubbleMove.swift */,
-				91B44944281BC4C400D8BF73 /* LottieOpenDoor.swift */,
 				919CECD7281B938600485731 /* TypingScene.swift */,
 				91B4494B281BC7E200D8BF73 /* OpenDoor.json */,
 				91B4494D281BE1A200D8BF73 /* ComponentStyle.swift */,
+				913BBC37281D1DFC0086E255 /* ComponetModifier.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -202,7 +245,12 @@
 			files = (
 				91DF69FF281A1E28004FEC2E /* Preview Assets.xcassets in Resources */,
 				91DF69FC281A1E28004FEC2E /* Assets.xcassets in Resources */,
+				913BBC40281D252A0086E255 /* Street.json in Resources */,
+				913BBC44281D27060086E255 /* Whale.json in Resources */,
+				91F134F5281D869100D519DE /* CircleWave.json in Resources */,
 				91B4494C281BC7E200D8BF73 /* OpenDoor.json in Resources */,
+				913BBC48281D37410086E255 /* Rain.json in Resources */,
+				91F134F1281D82D600D519DE /* Beach.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,9 +262,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				919CECC1281B66D400485731 /* doorView.swift in Sources */,
+				913BBC3C281D24CD0086E255 /* LottieStreet.swift in Sources */,
 				919CECCB281B6A7B00485731 /* nameView.swift in Sources */,
 				91DF69FA281A1E27004FEC2E /* ContentView.swift in Sources */,
-				919CECC5281B670B00485731 /* seaView.swift in Sources */,
+				919CECC5281B670B00485731 /* whaleView.swift in Sources */,
 				919CECD3281B811700485731 /* BubbleMove.swift in Sources */,
 				919CECD8281B938600485731 /* TypingScene.swift in Sources */,
 				91B44945281BC4C400D8BF73 /* LottieOpenDoor.swift in Sources */,
@@ -224,13 +273,18 @@
 				919CECBB281B668600485731 /* rainView.swift in Sources */,
 				919CECC3281B66F800485731 /* streetView.swift in Sources */,
 				919CECBF281B66CB00485731 /* waveView.swift in Sources */,
+				913BBC46281D37200086E255 /* LottieRain.swift in Sources */,
+				913BBC42281D26C20086E255 /* LottieWhale.swift in Sources */,
 				91B4494E281BE1A200D8BF73 /* ComponentStyle.swift in Sources */,
 				919CECBD281B66AB00485731 /* typingView.swift in Sources */,
 				919CECCD281B6A8300485731 /* resultView.swift in Sources */,
 				919CECB7281B665E00485731 /* IntroView.swift in Sources */,
 				919CECC7281B671900485731 /* burningView.swift in Sources */,
+				913BBC38281D1DFC0086E255 /* ComponetModifier.swift in Sources */,
+				91F134EF281D828F00D519DE /* LottieBeach.swift in Sources */,
 				919CECC9281B6A6700485731 /* bubbleView.swift in Sources */,
 				919CECB9281B667900485731 /* startView.swift in Sources */,
+				91F134F3281D864900D519DE /* LottieCircleWave.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

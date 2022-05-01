@@ -10,7 +10,13 @@ import SwiftUI
 struct resultView: View {
     @Binding var gotostartView: Bool
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Button("다시하기") {
+                gotostartView = false
+            }
+        }
+        .navigationBarTitle("", displayMode: .automatic)
+        .navigationBarHidden(true)
     }
 }
 

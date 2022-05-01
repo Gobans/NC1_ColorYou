@@ -12,31 +12,20 @@ struct doorView: View {
     @Binding var gotostartView: Bool
     var body: some View {
         VStack{
-            VStack{
                 Text("04 / 08")
                     .padding()
                 Text("이 소리를 들으면")
                     .font(.title2)
                 Text("어떤 생각이 떠오르나요?")
                     .font(.title2)
-            }
-//            Button(action: {
-//                gotoView6 = true
-//            }){
-//                Text("다음 씬")
-//            }
-//            .background(NavigationLink(
-//                destination: streetView(gotostartView: $gotostartView),
-//                isActive: $gotoView6,
-//                label: {EmptyView()}
-//            )
-//                .isDetailLink(false)
-//            )
             LottieOpenDoor(filename: "OpenDoor")
                 .frame(height:320)
             //button
             VStack(spacing: 50){
-                Button(action: {}) {
+                Button(action: {
+                    gotoView6 = true
+                    
+                }) {
                     HStack{
                         Text("A   | ")
                             .frame(alignment: .leading)
@@ -44,7 +33,16 @@ struct doorView: View {
                     }
                 }
                 .buttonStyle(LongSelctButton())
-                Button(action: {}) {
+                .background(NavigationLink(
+                    destination: streetView(gotostartView: $gotostartView),
+                    isActive: $gotoView6,
+                    label: {EmptyView()}
+                )
+                    .isDetailLink(false)
+                )
+                Button(action: {
+                    gotoView6 = true
+                }) {
                     HStack{
                         Text("A   | ")
                             .frame(alignment: .leading)
@@ -52,7 +50,16 @@ struct doorView: View {
                     }
                 }
                 .buttonStyle(LongSelctButton())
-                Button(action: {}) {
+                .background(NavigationLink(
+                    destination: streetView(gotostartView: $gotostartView),
+                    isActive: $gotoView6,
+                    label: {EmptyView()}
+                )
+                    .isDetailLink(false)
+                )
+                Button(action: {
+                    gotoView6 = true
+                }) {
                     HStack{
                         Text("A   | ")
                             .frame(alignment: .leading)
@@ -60,7 +67,16 @@ struct doorView: View {
                     }
                 }
                 .buttonStyle(LongSelctButton())
-                Button(action: {}) {
+                .background(NavigationLink(
+                    destination: streetView(gotostartView: $gotostartView),
+                    isActive: $gotoView6,
+                    label: {EmptyView()}
+                )
+                    .isDetailLink(false)
+                )
+                Button(action: {
+                    gotoView6 = true
+                }) {
                     HStack{
                         Text("A   | ")
                             .frame(alignment: .leading)
@@ -68,8 +84,17 @@ struct doorView: View {
                     }
                 }
                 .buttonStyle(LongSelctButton())
+                .background(NavigationLink(
+                    destination: streetView(gotostartView: $gotostartView),
+                    isActive: $gotoView6,
+                    label: {EmptyView()}
+                )
+                    .isDetailLink(false)
+                )
             }
         }
+        .navigationBarTitle("", displayMode: .automatic)
+        .navigationBarHidden(true)
     }
 }
 

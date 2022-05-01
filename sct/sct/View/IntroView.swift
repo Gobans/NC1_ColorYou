@@ -9,12 +9,18 @@ import SwiftUI
 
 struct IntroView: View {
     @State var gotoStartView = false
+    let LottieCircleWaveView = LottieCircleWave(filename: "CircleWave")
     var body: some View {
         NavigationView {
-            Button(action: {
-                gotoStartView = true
-            }){
-                ZStack{
+            ZStack{
+                LottieCircleWaveView
+                    .onAppear(perform: {
+                        LottieCircleWaveView.animationView.play()
+                    })
+                Button(action: {
+                    gotoStartView = true
+                }){
+                    
                     VStack(spacing:10){
                         Text("들어가기")
                             .foregroundColor(Color.black)
@@ -23,19 +29,15 @@ struct IntroView: View {
                             .font(.caption)
                             .foregroundColor(Color.gray)
                     }
-                    Circle()
-                        .stroke(Color.gray,lineWidth: 3)
-                        .padding(80)
-                        .opacity(0.1)
                 }
+                .background(NavigationLink(
+                    destination: startView(gotostartView: $gotoStartView),
+                    isActive: $gotoStartView,
+                    label: {EmptyView()}
+                )
+                    .isDetailLink(false)
+                )
             }
-            .background(NavigationLink(
-                destination: startView(gotostartView: $gotoStartView),
-                isActive: $gotoStartView,
-                label: {EmptyView()}
-            )
-                .isDetailLink(false)
-            )
             .navigationBarTitle("", displayMode: .automatic)
             .navigationBarHidden(true)
         }

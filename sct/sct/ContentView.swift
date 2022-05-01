@@ -7,6 +7,23 @@
 
 import SwiftUI
 
+struct FatSelctButton: ButtonStyle
+{
+    var backgroundColor : Color = .gray
+    var ConerRadius: CGFloat = 10
+    
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .foregroundColor(Color.black)
+            .background(RoundedRectangle(cornerRadius: ConerRadius)
+                .fill(.white)
+                .frame(width: 326, height: 74)
+                .opacity(0.5)
+            )
+
+    }
+}
+
 struct ContentView: View {
     var body: some View {
         VStack{
@@ -14,10 +31,14 @@ struct ContentView: View {
                 HStack{
                     Text("A   | ")
                         .frame(alignment: .leading)
-                    Text("sometext")
+                    VStack{
+                        Text("sometext")
+                        Text("sometext")
+                    }
+ 
                 }
             }
-            .buttonStyle(LongSelctButton())
+            .buttonStyle(FatSelctButton())
         }
     }
 }

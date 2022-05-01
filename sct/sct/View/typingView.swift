@@ -26,8 +26,6 @@ struct typingView: View {
             )
             .navigationBarTitle("", displayMode: .automatic)
             .navigationBarHidden(true)
-            
-            TypingScene()
         }
     }
 }

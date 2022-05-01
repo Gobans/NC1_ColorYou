@@ -23,18 +23,18 @@ struct Wave: Shape {
         // empirically determined values for wave to be seen
         // at 0 and 100 percent
         let lowfudge = 0.02
-        let highfudge = 0.98
+        let highfudge = 1.4
         
         let newpercent = lowfudge + (highfudge - lowfudge) * percent
         let waveHeight = 0.015 * rect.height
         let yoffset = CGFloat(1 - newpercent) * (rect.height - 4 * waveHeight) + 2 * waveHeight
         let startAngle = offset
-        let endAngle = offset + Angle(degrees: 365)
+        let endAngle = offset + Angle(degrees: 500)
         
         p.move(to: CGPoint(x: 0, y: yoffset + waveHeight * CGFloat(sin(offset.radians))))
         
         for angle in stride(from: startAngle.degrees, through: endAngle.degrees, by: 5) {
-            let x = CGFloat((angle - startAngle.degrees) / 360) * rect.width
+            let x = CGFloat((angle - startAngle.degrees) / 365) * rect.width
             p.addLine(to: CGPoint(x: x, y: yoffset + waveHeight * CGFloat(sin(Angle(degrees: angle).radians))))
         }
         
@@ -53,35 +53,90 @@ struct waveView: View {
     let percent = 100
     var body: some View {
         VStack{
-            Spacer()
-            Button(action: {
-                gotoView5 = true
-            }){
-                Text("다음 씬")
-            }
-            .background(NavigationLink(
-                destination: doorView(gotostartView: $gotostartView),
-                isActive: $gotoView5,
-                label: {EmptyView()}
-            )
-                .isDetailLink(false)
-            )
-            ZStack{
-                GeometryReader { geo in
-                    Wave(offset: Angle(degrees: self.waveOffset.degrees), percent: Double(percent)/100)
-                        .fill(.blue)
-                }
-                .aspectRatio(1, contentMode: .fit)
-                .onAppear {
-                    withAnimation(Animation.linear(duration: 2).repeatForever(autoreverses: false)) {
-                        self.waveOffset = Angle(degrees: 360)
+                Text("04 / 08")
+                    .padding()
+                Text("이 소리를 들으면")
+                    .font(.title2)
+                Text("어떤 생각이 떠오르나요?")
+                    .font(.title2)
+                LottieBeach(filename: "Beach")
+                    .frame(height:320)
+                    .padding(EdgeInsets(top: 0, leading: 30, bottom: 0, trailing: 0))
+            //button
+            VStack(spacing: 50){
+                Button(action: {
+                    gotoView5 = true
+                    
+                }) {
+                    HStack{
+                        Text("A   | ")
+                            .frame(alignment: .leading)
+                        Text("sometext")
                     }
                 }
-                
+                .buttonStyle(LongSelctButton())
+                .background(NavigationLink(
+                    destination: streetView(gotostartView: $gotostartView),
+                    isActive: $gotoView5,
+                    label: {EmptyView()}
+                )
+                    .isDetailLink(false)
+                )
+                Button(action: {
+                    gotoView5 = true
+                }) {
+                    HStack{
+                        Text("A   | ")
+                            .frame(alignment: .leading)
+                        Text("sometext")
+                    }
+                }
+                .buttonStyle(LongSelctButton())
+                .background(NavigationLink(
+                    destination: streetView(gotostartView: $gotostartView),
+                    isActive: $gotoView5,
+                    label: {EmptyView()}
+                )
+                    .isDetailLink(false)
+                )
+                Button(action: {
+                    gotoView5 = true
+                }) {
+                    HStack{
+                        Text("A   | ")
+                            .frame(alignment: .leading)
+                        Text("sometext")
+                    }
+                }
+                .buttonStyle(LongSelctButton())
+                .background(NavigationLink(
+                    destination: streetView(gotostartView: $gotostartView),
+                    isActive: $gotoView5,
+                    label: {EmptyView()}
+                )
+                    .isDetailLink(false)
+                )
+                Button(action: {
+                    gotoView5 = true
+                }) {
+                    HStack{
+                        Text("A   | ")
+                            .frame(alignment: .leading)
+                        Text("sometext")
+                    }
+                }
+                .buttonStyle(LongSelctButton())
+                .background(NavigationLink(
+                    destination: streetView(gotostartView: $gotostartView),
+                    isActive: $gotoView5,
+                    label: {EmptyView()}
+                )
+                    .isDetailLink(false)
+                )
             }
-            .navigationBarTitle("", displayMode: .automatic)
-            .navigationBarHidden(true)
-        }.ignoresSafeArea(.container, edges: .bottom)
+        }
+        .navigationBarTitle("", displayMode: .automatic)
+        .navigationBarHidden(true)
     }
 }
 
