@@ -14,8 +14,11 @@ struct rainView: View {
         ZStack{
             LottieRain(filename: "Rain")
                 .edgesIgnoringSafeArea(.all)
+                .onAppear(perform: {
+                    PlayBGM.playSounds(soundfile: "RainSound.mp3")
+                })
             VStack{
-                Text("01 / 08")
+                Text("07 / 08")
                     .padding()
                     .foregroundColor(Color.white)
                 Text("이 소리를 들으면")
@@ -29,17 +32,18 @@ struct rainView: View {
                 VStack(spacing:90){
                     Button(action: {
                         gotoView3 = true
-                        
+                        PlayBGM.audioPlayer?.stop()
                     }) {
-                        HStack{
+                        ZStack{
                             Text("A   | ")
-                                .frame(alignment: .leading)
-                            Text("sometext")
+                                .frame(maxWidth:280,alignment: .leading)
+
+                            Text("약속 시간에 늦을까 걱정된다")
                         }
                     }
                     .buttonStyle(FatSelctButton())
                     .background(NavigationLink(
-                        destination: typingView(gotostartView: $gotostartView),
+                        destination: bubbleView(gotostartView: $gotostartView),
                         isActive: $gotoView3,
                         label: {EmptyView()}
                     )
@@ -47,17 +51,18 @@ struct rainView: View {
                     )
                     Button(action: {
                         gotoView3 = true
-                        
+                        PlayBGM.audioPlayer?.stop()
                     }) {
-                        HStack{
-                            Text("A   | ")
-                                .frame(alignment: .leading)
-                            Text("sometext")
+                        ZStack{
+                            Text("B   | ")
+                                .frame(maxWidth:280,alignment: .leading)
+                            Text("편안하고 감성적인 작은집")
+                                .frame(maxWidth:190,alignment: .leading)
                         }
                     }
                     .buttonStyle(FatSelctButton())
                     .background(NavigationLink(
-                        destination: typingView(gotostartView: $gotostartView),
+                        destination: bubbleView(gotostartView: $gotostartView),
                         isActive: $gotoView3,
                         label: {EmptyView()}
                     )
@@ -65,17 +70,22 @@ struct rainView: View {
                     )
                     Button(action: {
                         gotoView3 = true
-                        
+                        PlayBGM.audioPlayer?.stop()
                     }) {
-                        HStack{
-                            Text("A   | ")
-                                .frame(alignment: .leading)
-                            Text("sometext")
+                        ZStack{
+                            Text("C   | ")
+                                .frame(maxWidth:280,alignment: .leading)
+                            VStack{
+                                Text("거리에 펼쳐진 형형색색의 우산들")
+                                    .frame(maxWidth:240,alignment: .trailing)
+                            }
+
+                        
                         }
                     }
                     .buttonStyle(FatSelctButton())
                     .background(NavigationLink(
-                        destination: typingView(gotostartView: $gotostartView),
+                        destination: bubbleView(gotostartView: $gotostartView),
                         isActive: $gotoView3,
                         label: {EmptyView()}
                     )
@@ -83,17 +93,22 @@ struct rainView: View {
                     )
                     Button(action: {
                         gotoView3 = true
-                        
+                        PlayBGM.audioPlayer?.stop()
                     }) {
-                        HStack{
-                            Text("A   | ")
-                                .frame(alignment: .leading)
-                            Text("sometext")
+                        ZStack{
+                            Text("D   | ")
+                                .frame(maxWidth:280,alignment: .leading)
+                            VStack{
+                                Text("한 사람이 팔을벌려 비를 맞고있다")
+                                    .frame(maxWidth:250,alignment: .trailing)
+                            }
+                            
+                            
                         }
                     }
                     .buttonStyle(FatSelctButton())
                     .background(NavigationLink(
-                        destination: typingView(gotostartView: $gotostartView),
+                        destination: bubbleView(gotostartView: $gotostartView),
                         isActive: $gotoView3,
                         label: {EmptyView()}
                     )

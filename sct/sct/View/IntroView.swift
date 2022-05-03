@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct IntroView: View {
     @State var gotoStartView = false
@@ -16,9 +17,11 @@ struct IntroView: View {
                 LottieCircleWaveView
                     .onAppear(perform: {
                         LottieCircleWaveView.animationView.play()
+                        PlayBGM.playSounds(soundfile: "Intro.mp3")
                     })
                 Button(action: {
                     gotoStartView = true
+                    PlayBGM.audioPlayer?.stop()
                 }){
                     
                     VStack(spacing:10){
@@ -44,8 +47,8 @@ struct IntroView: View {
     }
 }
 
-struct IntroView_Previews: PreviewProvider {
-    static var previews: some View {
-        IntroView()
-    }
-}
+//struct IntroView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        IntroView()
+//    }
+//}

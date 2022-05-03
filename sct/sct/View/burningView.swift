@@ -12,31 +12,32 @@ struct burningView: View {
     @Binding var gotostartView: Bool
     var body: some View {
         VStack{
-                Text("07 / 08")
+                Text("06 / 08")
                     .padding()
                 Text("이 소리를 들으면")
                     .font(.title2)
                 Text("어떤 생각이 떠오르나요?")
                     .font(.title2)
-            Image(systemName: "flame.fill")
-                .font(.system(size: 200))
-                .foregroundColor(Color.red)
-                .frame(width: 300,height:320)
+            LottieBurning(filename: "Burning")
+                .frame(height:320)
+                .onAppear(perform: {
+                    PlayBGM.playSounds(soundfile: "BurningSound.mp3")
+                })
             //button
             VStack(spacing: 50){
                 Button(action: {
                     gotoView9 = true
-                    
+                    PlayBGM.audioPlayer?.stop()
                 }) {
-                    HStack{
+                    ZStack{
                         Text("A   | ")
-                            .frame(alignment: .leading)
-                        Text("sometext")
+                            .frame(maxWidth:280,alignment: .leading)
+                        Text("따스한 온기")
                     }
                 }
                 .buttonStyle(LongSelctButton())
                 .background(NavigationLink(
-                    destination: bubbleView(gotostartView: $gotostartView),
+                    destination: rainView(gotostartView: $gotostartView),
                     isActive: $gotoView9,
                     label: {EmptyView()}
                 )
@@ -44,16 +45,17 @@ struct burningView: View {
                 )
                 Button(action: {
                     gotoView9 = true
+                    PlayBGM.audioPlayer?.stop()
                 }) {
-                    HStack{
-                        Text("A   | ")
-                            .frame(alignment: .leading)
-                        Text("sometext")
+                    ZStack{
+                        Text("B   | ")
+                            .frame(maxWidth:280,alignment: .leading)
+                        Text("진실된 시간")
                     }
                 }
                 .buttonStyle(LongSelctButton())
                 .background(NavigationLink(
-                    destination: bubbleView(gotostartView: $gotostartView),
+                    destination: rainView(gotostartView: $gotostartView),
                     isActive: $gotoView9,
                     label: {EmptyView()}
                 )
@@ -61,16 +63,17 @@ struct burningView: View {
                 )
                 Button(action: {
                     gotoView9 = true
+                    PlayBGM.audioPlayer?.stop()
                 }) {
-                    HStack{
-                        Text("A   | ")
-                            .frame(alignment: .leading)
-                        Text("sometext")
+                    ZStack{
+                        Text("C   | ")
+                            .frame(maxWidth:280,alignment: .leading)
+                        Text("재정비")
                     }
                 }
                 .buttonStyle(LongSelctButton())
                 .background(NavigationLink(
-                    destination: bubbleView(gotostartView: $gotostartView),
+                    destination: rainView(gotostartView: $gotostartView),
                     isActive: $gotoView9,
                     label: {EmptyView()}
                 )
@@ -78,16 +81,17 @@ struct burningView: View {
                 )
                 Button(action: {
                     gotoView9 = true
+                    PlayBGM.audioPlayer?.stop()
                 }) {
-                    HStack{
-                        Text("A   | ")
-                            .frame(alignment: .leading)
-                        Text("sometext")
+                    ZStack{
+                        Text("D   | ")
+                            .frame(maxWidth:280,alignment: .leading)
+                        Text("향기로운 고기냄새")
                     }
                 }
                 .buttonStyle(LongSelctButton())
                 .background(NavigationLink(
-                    destination: bubbleView(gotostartView: $gotostartView),
+                    destination: rainView(gotostartView: $gotostartView),
                     isActive: $gotoView9,
                     label: {EmptyView()}
                 )
@@ -97,6 +101,7 @@ struct burningView: View {
         }
         .navigationBarTitle("", displayMode: .automatic)
         .navigationBarHidden(true)
+        .padding(EdgeInsets(top: 0, leading: 0, bottom: 30, trailing: 0))
     }
 }
 

@@ -19,6 +19,7 @@ struct nameView: View {
                 }) {
                     Text("결과보기")
                 }
+                .buttonStyle(GrowingButton())
                 .background(NavigationLink(
                     destination: resultView(gotostartView: $gotostartView),
                     isActive: $gotoView11,

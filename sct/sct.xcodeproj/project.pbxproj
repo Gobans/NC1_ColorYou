@@ -14,6 +14,18 @@
 		913BBC44281D27060086E255 /* Whale.json in Resources */ = {isa = PBXBuildFile; fileRef = 913BBC43281D27060086E255 /* Whale.json */; };
 		913BBC46281D37200086E255 /* LottieRain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913BBC45281D37200086E255 /* LottieRain.swift */; };
 		913BBC48281D37410086E255 /* Rain.json in Resources */ = {isa = PBXBuildFile; fileRef = 913BBC47281D37410086E255 /* Rain.json */; };
+		9157B74D281FEE10009CDC08 /* Intro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9157B74B281FEE10009CDC08 /* Intro.mp3 */; };
+		9157B74E281FEE10009CDC08 /* MorningRoutine.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9157B74C281FEE10009CDC08 /* MorningRoutine.mp3 */; };
+		9157B752281FF566009CDC08 /* PlayBGM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9157B751281FF566009CDC08 /* PlayBGM.swift */; };
+		9157B754281FFD3D009CDC08 /* DoorOpenSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9157B753281FFD3D009CDC08 /* DoorOpenSound.mp3 */; };
+		9157B75628200426009CDC08 /* StreetSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9157B75528200426009CDC08 /* StreetSound.mp3 */; };
+		9157B758282005A7009CDC08 /* WhaleSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9157B757282005A7009CDC08 /* WhaleSound.mp3 */; };
+		9157B75A282007BC009CDC08 /* BurningSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9157B759282007BC009CDC08 /* BurningSound.mp3 */; };
+		918CAF61281F8350008D45CA /* LottieBurning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918CAF60281F8350008D45CA /* LottieBurning.swift */; };
+		918CAF65281F8431008D45CA /* LottieTyping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918CAF64281F8431008D45CA /* LottieTyping.swift */; };
+		918CAF67281F8458008D45CA /* Typing.json in Resources */ = {isa = PBXBuildFile; fileRef = 918CAF66281F8458008D45CA /* Typing.json */; };
+		918CAF69281F84B6008D45CA /* LottieBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918CAF68281F84B6008D45CA /* LottieBubble.swift */; };
+		918CAF6B281F84C5008D45CA /* Bubble.json in Resources */ = {isa = PBXBuildFile; fileRef = 918CAF6A281F84C5008D45CA /* Bubble.json */; };
 		919CECB7281B665E00485731 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CECB6281B665E00485731 /* IntroView.swift */; };
 		919CECB9281B667900485731 /* startView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CECB8281B667900485731 /* startView.swift */; };
 		919CECBB281B668600485731 /* rainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CECBA281B668600485731 /* rainView.swift */; };
@@ -30,12 +42,14 @@
 		919CECD6281B874200485731 /* LottieUI in Frameworks */ = {isa = PBXBuildFile; productRef = 919CECD5281B874200485731 /* LottieUI */; };
 		919CECD8281B938600485731 /* TypingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CECD7281B938600485731 /* TypingScene.swift */; };
 		91B44945281BC4C400D8BF73 /* LottieOpenDoor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B44944281BC4C400D8BF73 /* LottieOpenDoor.swift */; };
-		91B4494C281BC7E200D8BF73 /* OpenDoor.json in Resources */ = {isa = PBXBuildFile; fileRef = 91B4494B281BC7E200D8BF73 /* OpenDoor.json */; };
 		91B4494E281BE1A200D8BF73 /* ComponentStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B4494D281BE1A200D8BF73 /* ComponentStyle.swift */; };
+		91C5EE952820118F009C76A1 /* RainSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 91C5EE942820118F009C76A1 /* RainSound.mp3 */; };
 		91DF69F8281A1E27004FEC2E /* sctApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DF69F7281A1E27004FEC2E /* sctApp.swift */; };
 		91DF69FA281A1E27004FEC2E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DF69F9281A1E27004FEC2E /* ContentView.swift */; };
 		91DF69FC281A1E28004FEC2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91DF69FB281A1E28004FEC2E /* Assets.xcassets */; };
 		91DF69FF281A1E28004FEC2E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91DF69FE281A1E28004FEC2E /* Preview Assets.xcassets */; };
+		91EB77B0281FA97000148BA3 /* DoorOpen.json in Resources */ = {isa = PBXBuildFile; fileRef = 91EB77AF281FA97000148BA3 /* DoorOpen.json */; };
+		91EB77B2281FB5F400148BA3 /* Burning.json in Resources */ = {isa = PBXBuildFile; fileRef = 91EB77B1281FB5F400148BA3 /* Burning.json */; };
 		91F134EF281D828F00D519DE /* LottieBeach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F134EE281D828F00D519DE /* LottieBeach.swift */; };
 		91F134F1281D82D600D519DE /* Beach.json in Resources */ = {isa = PBXBuildFile; fileRef = 91F134F0281D82D600D519DE /* Beach.json */; };
 		91F134F3281D864900D519DE /* LottieCircleWave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F134F2281D864900D519DE /* LottieCircleWave.swift */; };
@@ -44,13 +58,24 @@
 
 /* Begin PBXFileReference section */
 		913BBC37281D1DFC0086E255 /* ComponetModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponetModifier.swift; sourceTree = "<group>"; };
-		913BBC3A281D24BB0086E255 /* OpenDoor.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = OpenDoor.json; sourceTree = "<group>"; };
 		913BBC3B281D24CD0086E255 /* LottieStreet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieStreet.swift; sourceTree = "<group>"; };
 		913BBC3F281D252A0086E255 /* Street.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Street.json; path = ../../../../../../../Downloads/Street.json; sourceTree = "<group>"; };
 		913BBC41281D26C20086E255 /* LottieWhale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieWhale.swift; sourceTree = "<group>"; };
 		913BBC43281D27060086E255 /* Whale.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Whale.json; path = ../../../../../../../Downloads/Whale.json; sourceTree = "<group>"; };
 		913BBC45281D37200086E255 /* LottieRain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieRain.swift; sourceTree = "<group>"; };
 		913BBC47281D37410086E255 /* Rain.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Rain.json; path = ../../../../../../../Downloads/Rain.json; sourceTree = "<group>"; };
+		9157B74B281FEE10009CDC08 /* Intro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Intro.mp3; path = ../../../../../../../Downloads/Intro.mp3; sourceTree = "<group>"; };
+		9157B74C281FEE10009CDC08 /* MorningRoutine.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = MorningRoutine.mp3; path = ../../../../../../../Downloads/MorningRoutine.mp3; sourceTree = "<group>"; };
+		9157B751281FF566009CDC08 /* PlayBGM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayBGM.swift; sourceTree = "<group>"; };
+		9157B753281FFD3D009CDC08 /* DoorOpenSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = DoorOpenSound.mp3; path = ../../../../../../../Downloads/DoorOpenSound.mp3; sourceTree = "<group>"; };
+		9157B75528200426009CDC08 /* StreetSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = StreetSound.mp3; path = ../../../../../../../Downloads/StreetSound.mp3; sourceTree = "<group>"; };
+		9157B757282005A7009CDC08 /* WhaleSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = WhaleSound.mp3; path = ../../../../../../../Downloads/WhaleSound.mp3; sourceTree = "<group>"; };
+		9157B759282007BC009CDC08 /* BurningSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = BurningSound.mp3; path = ../../../../../../../Downloads/BurningSound.mp3; sourceTree = "<group>"; };
+		918CAF60281F8350008D45CA /* LottieBurning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieBurning.swift; sourceTree = "<group>"; };
+		918CAF64281F8431008D45CA /* LottieTyping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieTyping.swift; sourceTree = "<group>"; };
+		918CAF66281F8458008D45CA /* Typing.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Typing.json; path = ../../../../../../../Downloads/Typing.json; sourceTree = "<group>"; };
+		918CAF68281F84B6008D45CA /* LottieBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieBubble.swift; sourceTree = "<group>"; };
+		918CAF6A281F84C5008D45CA /* Bubble.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Bubble.json; path = ../../../../../../../Downloads/Bubble.json; sourceTree = "<group>"; };
 		919CECB6281B665E00485731 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
 		919CECB8281B667900485731 /* startView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = startView.swift; sourceTree = "<group>"; };
 		919CECBA281B668600485731 /* rainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rainView.swift; sourceTree = "<group>"; };
@@ -66,13 +91,16 @@
 		919CECD2281B811700485731 /* BubbleMove.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleMove.swift; sourceTree = "<group>"; };
 		919CECD7281B938600485731 /* TypingScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypingScene.swift; sourceTree = "<group>"; };
 		91B44944281BC4C400D8BF73 /* LottieOpenDoor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieOpenDoor.swift; sourceTree = "<group>"; };
-		91B4494B281BC7E200D8BF73 /* OpenDoor.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = OpenDoor.json; path = ../../../../../../Downloads/OpenDoor.json; sourceTree = "<group>"; };
 		91B4494D281BE1A200D8BF73 /* ComponentStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentStyle.swift; sourceTree = "<group>"; };
+		91C5EE942820118F009C76A1 /* RainSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = RainSound.mp3; path = ../../../../../../../Downloads/RainSound.mp3; sourceTree = "<group>"; };
+		91C5EE96282011D4009C76A1 /* TypingSound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = TypingSound.m4a; path = ../../../../../../../Downloads/TypingSound.m4a; sourceTree = "<group>"; };
 		91DF69F4281A1E27004FEC2E /* sct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sct.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91DF69F7281A1E27004FEC2E /* sctApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sctApp.swift; sourceTree = "<group>"; };
 		91DF69F9281A1E27004FEC2E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		91DF69FB281A1E28004FEC2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91DF69FE281A1E28004FEC2E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		91EB77AF281FA97000148BA3 /* DoorOpen.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = DoorOpen.json; path = ../../../../../../../Downloads/DoorOpen.json; sourceTree = "<group>"; };
+		91EB77B1281FB5F400148BA3 /* Burning.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Burning.json; path = ../../../../../../../Downloads/Burning.json; sourceTree = "<group>"; };
 		91F134EE281D828F00D519DE /* LottieBeach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieBeach.swift; sourceTree = "<group>"; };
 		91F134F0281D82D600D519DE /* Beach.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Beach.json; path = ../../../../../../../Downloads/Beach.json; sourceTree = "<group>"; };
 		91F134F2281D864900D519DE /* LottieCircleWave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieCircleWave.swift; sourceTree = "<group>"; };
@@ -97,7 +125,7 @@
 				91F134F2281D864900D519DE /* LottieCircleWave.swift */,
 				91F134F4281D869100D519DE /* CircleWave.json */,
 				91B44944281BC4C400D8BF73 /* LottieOpenDoor.swift */,
-				913BBC3A281D24BB0086E255 /* OpenDoor.json */,
+				91EB77AF281FA97000148BA3 /* DoorOpen.json */,
 				913BBC3B281D24CD0086E255 /* LottieStreet.swift */,
 				913BBC3F281D252A0086E255 /* Street.json */,
 				913BBC41281D26C20086E255 /* LottieWhale.swift */,
@@ -106,8 +134,30 @@
 				913BBC47281D37410086E255 /* Rain.json */,
 				91F134EE281D828F00D519DE /* LottieBeach.swift */,
 				91F134F0281D82D600D519DE /* Beach.json */,
+				918CAF60281F8350008D45CA /* LottieBurning.swift */,
+				91EB77B1281FB5F400148BA3 /* Burning.json */,
+				918CAF64281F8431008D45CA /* LottieTyping.swift */,
+				918CAF66281F8458008D45CA /* Typing.json */,
+				918CAF68281F84B6008D45CA /* LottieBubble.swift */,
+				918CAF6A281F84C5008D45CA /* Bubble.json */,
 			);
 			path = Lottie;
+			sourceTree = "<group>";
+		};
+		918CAF6C281F89F4008D45CA /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				9157B74B281FEE10009CDC08 /* Intro.mp3 */,
+				9157B74C281FEE10009CDC08 /* MorningRoutine.mp3 */,
+				9157B751281FF566009CDC08 /* PlayBGM.swift */,
+				9157B753281FFD3D009CDC08 /* DoorOpenSound.mp3 */,
+				9157B75528200426009CDC08 /* StreetSound.mp3 */,
+				91C5EE96282011D4009C76A1 /* TypingSound.m4a */,
+				9157B757282005A7009CDC08 /* WhaleSound.mp3 */,
+				9157B759282007BC009CDC08 /* BurningSound.mp3 */,
+				91C5EE942820118F009C76A1 /* RainSound.mp3 */,
+			);
+			path = Sound;
 			sourceTree = "<group>";
 		};
 		919CECB5281B661500485731 /* View */ = {
@@ -115,13 +165,13 @@
 			children = (
 				919CECB6281B665E00485731 /* IntroView.swift */,
 				919CECB8281B667900485731 /* startView.swift */,
-				919CECBA281B668600485731 /* rainView.swift */,
-				919CECBC281B66AB00485731 /* typingView.swift */,
 				919CECBE281B66CB00485731 /* waveView.swift */,
+				919CECBC281B66AB00485731 /* typingView.swift */,
 				919CECC0281B66D400485731 /* doorView.swift */,
 				919CECC2281B66F800485731 /* streetView.swift */,
 				919CECC4281B670B00485731 /* whaleView.swift */,
 				919CECC6281B671900485731 /* burningView.swift */,
+				919CECBA281B668600485731 /* rainView.swift */,
 				919CECC8281B6A6700485731 /* bubbleView.swift */,
 				919CECCA281B6A7B00485731 /* nameView.swift */,
 				919CECCC281B6A8300485731 /* resultView.swift */,
@@ -132,10 +182,10 @@
 		919CECD1281B80E800485731 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				918CAF6C281F89F4008D45CA /* Sound */,
 				913BBC39281D24B30086E255 /* Lottie */,
 				919CECD2281B811700485731 /* BubbleMove.swift */,
 				919CECD7281B938600485731 /* TypingScene.swift */,
-				91B4494B281BC7E200D8BF73 /* OpenDoor.json */,
 				91B4494D281BE1A200D8BF73 /* ComponentStyle.swift */,
 				913BBC37281D1DFC0086E255 /* ComponetModifier.swift */,
 			);
@@ -163,8 +213,8 @@
 			children = (
 				919CECD1281B80E800485731 /* Model */,
 				919CECB5281B661500485731 /* View */,
-				91DF69F7281A1E27004FEC2E /* sctApp.swift */,
 				91DF69F9281A1E27004FEC2E /* ContentView.swift */,
+				91DF69F7281A1E27004FEC2E /* sctApp.swift */,
 				91DF69FB281A1E28004FEC2E /* Assets.xcassets */,
 				91DF69FD281A1E28004FEC2E /* Preview Content */,
 			);
@@ -243,14 +293,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91EB77B2281FB5F400148BA3 /* Burning.json in Resources */,
 				91DF69FF281A1E28004FEC2E /* Preview Assets.xcassets in Resources */,
+				9157B754281FFD3D009CDC08 /* DoorOpenSound.mp3 in Resources */,
 				91DF69FC281A1E28004FEC2E /* Assets.xcassets in Resources */,
+				9157B74D281FEE10009CDC08 /* Intro.mp3 in Resources */,
 				913BBC40281D252A0086E255 /* Street.json in Resources */,
+				91C5EE952820118F009C76A1 /* RainSound.mp3 in Resources */,
+				9157B758282005A7009CDC08 /* WhaleSound.mp3 in Resources */,
+				9157B75A282007BC009CDC08 /* BurningSound.mp3 in Resources */,
+				9157B75628200426009CDC08 /* StreetSound.mp3 in Resources */,
 				913BBC44281D27060086E255 /* Whale.json in Resources */,
+				918CAF67281F8458008D45CA /* Typing.json in Resources */,
+				918CAF6B281F84C5008D45CA /* Bubble.json in Resources */,
+				9157B74E281FEE10009CDC08 /* MorningRoutine.mp3 in Resources */,
 				91F134F5281D869100D519DE /* CircleWave.json in Resources */,
-				91B4494C281BC7E200D8BF73 /* OpenDoor.json in Resources */,
 				913BBC48281D37410086E255 /* Rain.json in Resources */,
 				91F134F1281D82D600D519DE /* Beach.json in Resources */,
+				91EB77B0281FA97000148BA3 /* DoorOpen.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,17 +334,21 @@
 				919CECC3281B66F800485731 /* streetView.swift in Sources */,
 				919CECBF281B66CB00485731 /* waveView.swift in Sources */,
 				913BBC46281D37200086E255 /* LottieRain.swift in Sources */,
+				918CAF65281F8431008D45CA /* LottieTyping.swift in Sources */,
 				913BBC42281D26C20086E255 /* LottieWhale.swift in Sources */,
+				918CAF69281F84B6008D45CA /* LottieBubble.swift in Sources */,
 				91B4494E281BE1A200D8BF73 /* ComponentStyle.swift in Sources */,
 				919CECBD281B66AB00485731 /* typingView.swift in Sources */,
 				919CECCD281B6A8300485731 /* resultView.swift in Sources */,
 				919CECB7281B665E00485731 /* IntroView.swift in Sources */,
+				9157B752281FF566009CDC08 /* PlayBGM.swift in Sources */,
 				919CECC7281B671900485731 /* burningView.swift in Sources */,
 				913BBC38281D1DFC0086E255 /* ComponetModifier.swift in Sources */,
 				91F134EF281D828F00D519DE /* LottieBeach.swift in Sources */,
 				919CECC9281B6A6700485731 /* bubbleView.swift in Sources */,
 				919CECB9281B667900485731 /* startView.swift in Sources */,
 				91F134F3281D864900D519DE /* LottieCircleWave.swift in Sources */,
+				918CAF61281F8350008D45CA /* LottieBurning.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

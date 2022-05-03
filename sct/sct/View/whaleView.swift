@@ -12,7 +12,7 @@ struct whaleView: View {
     @Binding var gotostartView: Bool
     var body: some View {
         VStack{
-                Text("06 / 08")
+                Text("05 / 08")
                     .padding()
                 Text("이 소리를 들으면")
                     .font(.title2)
@@ -20,16 +20,20 @@ struct whaleView: View {
                     .font(.title2)
             LottieWhale(filename: "Whale")
                 .frame(height:320)
+                .onAppear(perform: {
+                    PlayBGM.playSounds(soundfile: "WhaleSound.mp3")
+                })
             //button
             VStack(spacing: 50){
                 Button(action: {
                     gotoView8 = true
-                    
+                    PlayBGM.audioPlayer?.stop()
                 }) {
-                    HStack{
+                    ZStack{
                         Text("A   | ")
-                            .frame(alignment: .leading)
-                        Text("sometext")
+                            .frame(maxWidth:280,alignment: .leading)
+                        Text("보트 밑으로 고래가 지나가고 있다")
+                            .frame(maxWidth:240,alignment: .trailing)
                     }
                 }
                 .buttonStyle(LongSelctButton())
@@ -42,11 +46,13 @@ struct whaleView: View {
                 )
                 Button(action: {
                     gotoView8 = true
+                    PlayBGM.audioPlayer?.stop()
                 }) {
-                    HStack{
-                        Text("A   | ")
-                            .frame(alignment: .leading)
-                        Text("sometext")
+                    ZStack{
+                        Text("B   | ")
+                            .frame(maxWidth:280,alignment: .leading)
+                        Text("다른 고래에게 도움을 요청하고 있다")
+                            .frame(maxWidth:270,alignment: .trailing)
                     }
                 }
                 .buttonStyle(LongSelctButton())
@@ -59,11 +65,12 @@ struct whaleView: View {
                 )
                 Button(action: {
                     gotoView8 = true
+                    PlayBGM.audioPlayer?.stop()
                 }) {
-                    HStack{
-                        Text("A   | ")
-                            .frame(alignment: .leading)
-                        Text("sometext")
+                    ZStack{
+                        Text("C   | ")
+                            .frame(maxWidth:280,alignment: .leading)
+                        Text("어디로 가야할지 의논하고있다")
                     }
                 }
                 .buttonStyle(LongSelctButton())
@@ -76,11 +83,13 @@ struct whaleView: View {
                 )
                 Button(action: {
                     gotoView8 = true
+                    PlayBGM.audioPlayer?.stop()
                 }) {
-                    HStack{
-                        Text("A   | ")
-                            .frame(alignment: .leading)
-                        Text("sometext")
+                    ZStack{
+                        Text("D   | ")
+                            .frame(maxWidth:280,alignment: .leading)
+                        Text("레이스 대결을 하고있다")
+                            .frame(maxWidth:200,alignment: .leading)
                     }
                 }
                 .buttonStyle(LongSelctButton())
@@ -95,6 +104,7 @@ struct whaleView: View {
         }
         .navigationBarTitle("", displayMode: .automatic)
         .navigationBarHidden(true)
+        .padding(EdgeInsets(top: 0, leading: 0, bottom: 30, trailing: 0))
     }
 }
 

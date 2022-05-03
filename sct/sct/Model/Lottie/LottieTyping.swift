@@ -9,25 +9,28 @@ import Lottie
 import SwiftUI
 import UIKit
  
-struct LottieOpenDoor: UIViewRepresentable {
+struct LottieTyping: UIViewRepresentable {
     
     typealias UIViewType = UIView
     //5.
     var filename: String
-    var animationView = AnimationView()
+    
     
     //1. Context -> UIViewRepresentableContext<LottieView>로 수정
-    func makeUIView(context: UIViewRepresentableContext<LottieOpenDoor>) -> UIView {
+    func makeUIView(context: UIViewRepresentableContext<LottieTyping>) -> UIView {
         //3.
         let view = UIView(frame: .zero)
-
+        //4. Add animation
+        let animationView = AnimationView()
         //사용자 애니메이션 파일명
-        animationView.animation = Animation.named("DoorOpen")
+        animationView.animation = Animation.named(filename)
         //애니메이션 크기가 적절하게 조정될 수 있도록
         animationView.contentMode = .scaleAspectFit
+        animationView.loopMode = .loop
         
-        animationView.animationSpeed = 1
+        animationView.animationSpeed = 0.8
         //애니메이션 재생
+        animationView.play()
         
         //컨테이너의 너비와 높이를 자동으로 지정할 수 있도록
         animationView.translatesAutoresizingMaskIntoConstraints = false
@@ -44,7 +47,7 @@ struct LottieOpenDoor: UIViewRepresentable {
         return view
     }
     //2. Context -> UIViewRepresentableContext<LottieView>로 수정
-    func updateUIView(_ uiView: UIView, context: UIViewRepresentableContext<LottieOpenDoor>) {
+    func updateUIView(_ uiView: UIView, context: UIViewRepresentableContext<LottieTyping>) {
         // do nothing
     }
     
