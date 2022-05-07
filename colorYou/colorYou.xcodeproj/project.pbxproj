@@ -56,7 +56,7 @@
 		91B4494E281BE1A200D8BF73 /* ComponentStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B4494D281BE1A200D8BF73 /* ComponentStyle.swift */; };
 		91DAAB472822180E00E522CA /* Wave.json in Resources */ = {isa = PBXBuildFile; fileRef = 91DAAB462822180E00E522CA /* Wave.json */; };
 		91DAAB4B28222C1B00E522CA /* Whale.json in Resources */ = {isa = PBXBuildFile; fileRef = 91DAAB4A28222C1B00E522CA /* Whale.json */; };
-		91DF69F8281A1E27004FEC2E /* sctApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DF69F7281A1E27004FEC2E /* sctApp.swift */; };
+		91DF69F8281A1E27004FEC2E /* colorYouApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DF69F7281A1E27004FEC2E /* colorYouApp.swift */; };
 		91DF69FA281A1E27004FEC2E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DF69F9281A1E27004FEC2E /* ContentView.swift */; };
 		91DF69FC281A1E28004FEC2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91DF69FB281A1E28004FEC2E /* Assets.xcassets */; };
 		91DF69FF281A1E28004FEC2E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91DF69FE281A1E28004FEC2E /* Preview Assets.xcassets */; };
@@ -113,10 +113,10 @@
 		91B4494D281BE1A200D8BF73 /* ComponentStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentStyle.swift; sourceTree = "<group>"; };
 		91DAAB462822180E00E522CA /* Wave.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Wave.json; sourceTree = "<group>"; };
 		91DAAB4A28222C1B00E522CA /* Whale.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Whale.json; sourceTree = "<group>"; };
-		91DF69F4281A1E27004FEC2E /* sct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sct.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		91DF69F7281A1E27004FEC2E /* sctApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sctApp.swift; sourceTree = "<group>"; };
-		91DF69F9281A1E27004FEC2E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		91DF69FB281A1E28004FEC2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		91DF69F4281A1E27004FEC2E /* colorYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = colorYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		91DF69F7281A1E27004FEC2E /* colorYouApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = colorYouApp.swift; path = colorYou/colorYouApp.swift; sourceTree = "<group>"; };
+		91DF69F9281A1E27004FEC2E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = colorYou/ContentView.swift; sourceTree = "<group>"; };
+		91DF69FB281A1E28004FEC2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = colorYou/Assets.xcassets; sourceTree = "<group>"; };
 		91DF69FE281A1E28004FEC2E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		91F134EE281D828F00D519DE /* LottieBeach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieBeach.swift; sourceTree = "<group>"; };
 		91F134F2281D864900D519DE /* LottieCircleWave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieCircleWave.swift; sourceTree = "<group>"; };
@@ -189,7 +189,8 @@
 				919CECCC281B6A8300485731 /* resultView.swift */,
 				91924D3328217D40004FC85A /* gobanView.swift */,
 			);
-			path = View;
+			name = View;
+			path = colorYou/View;
 			sourceTree = "<group>";
 		};
 		919CECD1281B80E800485731 /* Model */ = {
@@ -202,7 +203,8 @@
 				912A294F28210C8D005AB48A /* TestData.swift */,
 				91B4494D281BE1A200D8BF73 /* ComponentStyle.swift */,
 			);
-			path = Model;
+			name = Model;
+			path = colorYou/Model;
 			sourceTree = "<group>";
 		};
 		91BD2E092820CDAA00C02BB2 /* Json */ = {
@@ -225,7 +227,7 @@
 		91DF69EB281A1E27004FEC2E = {
 			isa = PBXGroup;
 			children = (
-				91DF69F6281A1E27004FEC2E /* sct */,
+				91DF69F6281A1E27004FEC2E /* colorYou */,
 				91DF69F5281A1E27004FEC2E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -233,22 +235,22 @@
 		91DF69F5281A1E27004FEC2E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				91DF69F4281A1E27004FEC2E /* sct.app */,
+				91DF69F4281A1E27004FEC2E /* colorYou.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		91DF69F6281A1E27004FEC2E /* sct */ = {
+		91DF69F6281A1E27004FEC2E /* colorYou */ = {
 			isa = PBXGroup;
 			children = (
 				919CECD1281B80E800485731 /* Model */,
 				919CECB5281B661500485731 /* View */,
 				91DF69F9281A1E27004FEC2E /* ContentView.swift */,
-				91DF69F7281A1E27004FEC2E /* sctApp.swift */,
+				91DF69F7281A1E27004FEC2E /* colorYouApp.swift */,
 				91DF69FB281A1E28004FEC2E /* Assets.xcassets */,
 				91DF69FD281A1E28004FEC2E /* Preview Content */,
 			);
-			path = sct;
+			name = colorYou;
 			sourceTree = "<group>";
 		};
 		91DF69FD281A1E28004FEC2E /* Preview Content */ = {
@@ -256,15 +258,16 @@
 			children = (
 				91DF69FE281A1E28004FEC2E /* Preview Assets.xcassets */,
 			);
-			path = "Preview Content";
+			name = "Preview Content";
+			path = "colorYou/Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		91DF69F3281A1E27004FEC2E /* sct */ = {
+		91DF69F3281A1E27004FEC2E /* colorYou */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 91DF6A02281A1E28004FEC2E /* Build configuration list for PBXNativeTarget "sct" */;
+			buildConfigurationList = 91DF6A02281A1E28004FEC2E /* Build configuration list for PBXNativeTarget "colorYou" */;
 			buildPhases = (
 				91DF69F0281A1E27004FEC2E /* Sources */,
 				91DF69F1281A1E27004FEC2E /* Frameworks */,
@@ -274,12 +277,12 @@
 			);
 			dependencies = (
 			);
-			name = sct;
+			name = colorYou;
 			packageProductDependencies = (
 				919CECD5281B874200485731 /* LottieUI */,
 			);
 			productName = sct;
-			productReference = 91DF69F4281A1E27004FEC2E /* sct.app */;
+			productReference = 91DF69F4281A1E27004FEC2E /* colorYou.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -297,7 +300,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 91DF69EF281A1E27004FEC2E /* Build configuration list for PBXProject "sct" */;
+			buildConfigurationList = 91DF69EF281A1E27004FEC2E /* Build configuration list for PBXProject "colorYou" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -313,7 +316,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				91DF69F3281A1E27004FEC2E /* sct */,
+				91DF69F3281A1E27004FEC2E /* colorYou */,
 			);
 		};
 /* End PBXProject section */
@@ -365,7 +368,7 @@
 				919CECD3281B811700485731 /* BubbleMove.swift in Sources */,
 				919CECD8281B938600485731 /* TypingScene.swift in Sources */,
 				91B44945281BC4C400D8BF73 /* LottieOpenDoor.swift in Sources */,
-				91DF69F8281A1E27004FEC2E /* sctApp.swift in Sources */,
+				91DF69F8281A1E27004FEC2E /* colorYouApp.swift in Sources */,
 				919CECBB281B668600485731 /* rainView.swift in Sources */,
 				919CECC3281B66F800485731 /* streetView.swift in Sources */,
 				919CECBF281B66CB00485731 /* waveView.swift in Sources */,
@@ -514,7 +517,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"sct/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"colorYou/Preview Content\"";
 				DEVELOPMENT_TEAM = 54QH6LCWDM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -529,7 +532,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = goban.sct;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = colorYou;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -543,7 +546,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"sct/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"colorYou/Preview Content\"";
 				DEVELOPMENT_TEAM = 54QH6LCWDM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -558,7 +561,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = goban.sct;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = colorYou;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -568,7 +571,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		91DF69EF281A1E27004FEC2E /* Build configuration list for PBXProject "sct" */ = {
+		91DF69EF281A1E27004FEC2E /* Build configuration list for PBXProject "colorYou" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				91DF6A00281A1E28004FEC2E /* Debug */,
@@ -577,7 +580,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		91DF6A02281A1E28004FEC2E /* Build configuration list for PBXNativeTarget "sct" */ = {
+		91DF6A02281A1E28004FEC2E /* Build configuration list for PBXNativeTarget "colorYou" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				91DF6A03281A1E28004FEC2E /* Debug */,

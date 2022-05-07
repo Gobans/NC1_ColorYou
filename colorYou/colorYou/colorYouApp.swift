@@ -14,4 +14,4 @@ struct sctApp: App {
             IntroView()
         }
     }
-}
+ }
