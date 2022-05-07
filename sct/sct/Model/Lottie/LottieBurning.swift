@@ -25,7 +25,6 @@ struct LottieBurning: UIViewRepresentable {
         //사용자 애니메이션 파일명
         animationView.animation = Animation.named(filename)
         //애니메이션 크기가 적절하게 조정될 수 있도록
-        animationView.contentMode = .scaleAspectFit
         animationView.loopMode = .loop
         
         animationView.animationSpeed = 0.8

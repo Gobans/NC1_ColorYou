@@ -10,18 +10,25 @@ import SwiftUI
 struct nameView: View {
     @State var gotoView11 = false
     @Binding var gotostartView: Bool
+    @State var userScore : Score
+    @State var userName : String = ""
+    @State var userResult : String = ""
+    @State var userResultModel : resultModel = resultModel(userResult: "Blue")
     var body: some View {
-            VStack{
+        VStack(spacing:50){
                 Text("당신의 이름은 무엇인가요?")
-                TextField(/*@START_MENU_TOKEN@*/"Placeholder"/*@END_MENU_TOKEN@*/, text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                TextField("당신의 이름은?", text: $userName)
                 Button(action: {
                     gotoView11 = true
+                    userResult = userScore.returnResult()
+                    print(userScore)
+                    userResultModel = resultModel(userResult: userResult)
                 }) {
                     Text("결과보기")
                 }
                 .buttonStyle(GrowingButton())
                 .background(NavigationLink(
-                    destination: resultView(gotostartView: $gotostartView),
+                    destination: resultView(gotostartView: $gotostartView,userName: userName,userResultModel: userResultModel),
                     isActive: $gotoView11,
                     label: {EmptyView()}
                 )
@@ -36,6 +43,6 @@ struct nameView: View {
 
 struct nameView_Previews: PreviewProvider {
     static var previews: some View {
-        nameView(gotostartView: .constant(false))
+        nameView(gotostartView: .constant(false),userScore: Score(),userResultModel: resultModel(userResult: "Blue"))
     }
 }

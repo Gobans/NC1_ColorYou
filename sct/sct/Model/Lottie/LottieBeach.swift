@@ -15,20 +15,21 @@ struct LottieBeach: UIViewRepresentable {
     //5.
     var filename: String
     
+    var animationView = AnimationView()
     
     //1. Context -> UIViewRepresentableContext<LottieView>로 수정
     func makeUIView(context: UIViewRepresentableContext<LottieBeach>) -> UIView {
         //3.
         let view = UIView(frame: .zero)
         //4. Add animation
-        let animationView = AnimationView()
+
         //사용자 애니메이션 파일명
         animationView.animation = Animation.named(filename)
         //애니메이션 크기가 적절하게 조정될 수 있도록
-        animationView.contentMode = .scaleAspectFit
+        animationView.contentMode = .scaleToFill
         animationView.loopMode = .loop
         
-        animationView.animationSpeed = 1
+        animationView.animationSpeed = 0.8
         //애니메이션 재생
         animationView.play()
         

@@ -17,7 +17,7 @@ struct IntroView: View {
                 LottieCircleWaveView
                     .onAppear(perform: {
                         LottieCircleWaveView.animationView.play()
-                        PlayBGM.playSounds(soundfile: "Intro.mp3")
+                        PlayBGM.playSounds(soundfile: "IntroSound.mp3")
                     })
                 Button(action: {
                     gotoStartView = true

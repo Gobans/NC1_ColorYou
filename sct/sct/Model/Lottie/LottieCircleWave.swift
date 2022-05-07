@@ -27,7 +27,7 @@ struct LottieCircleWave: UIViewRepresentable {
         animationView.contentMode = .scaleAspectFit
         animationView.loopMode = .loop
         
-        animationView.animationSpeed = 1
+        animationView.animationSpeed = 0.8
         //컨테이너의 너비와 높이를 자동으로 지정할 수 있도록
         animationView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(animationView)

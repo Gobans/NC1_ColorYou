@@ -10,6 +10,7 @@ import SwiftUI
 struct rainView: View {
     @State var gotoView3 = false
     @Binding var gotostartView: Bool
+    @State var userScore : Score
     var body: some View {
         ZStack{
             LottieRain(filename: "Rain")
@@ -17,33 +18,35 @@ struct rainView: View {
                 .onAppear(perform: {
                     PlayBGM.playSounds(soundfile: "RainSound.mp3")
                 })
-            VStack{
-                Text("07 / 08")
-                    .padding()
-                    .foregroundColor(Color.white)
-                Text("이 소리를 들으면")
-                    .font(.title2)
-                    .foregroundColor(Color.white)
-                Text("어떤 생각이 떠오르나요?")
-                    .font(.title2)
-                    .foregroundColor(Color.white)
-                Spacer()
-                    .frame(height:88)
-                VStack(spacing:90){
+            VStack(spacing:320){
+                VStack{
+                    Text("07 / 08")
+                        .padding()
+                        .foregroundColor(Color.white)
+                    Text("이 소리를 들으면")
+                        .font(.title2)
+                        .foregroundColor(Color.white)
+                    Text("어떤 생각이 떠오르나요?")
+                        .font(.title2)
+                        .foregroundColor(Color.white)
+                }
+                VStack(spacing:50){
                     Button(action: {
                         gotoView3 = true
                         PlayBGM.audioPlayer?.stop()
+                        userScore.addScore(select: "D")
                     }) {
                         ZStack{
                             Text("A   | ")
                                 .frame(maxWidth:280,alignment: .leading)
+                                Text("아이들이 비를 맞으며 뛰놀고있다")
+                                    .frame(maxWidth:240,alignment: .trailing)
 
-                            Text("약속 시간에 늦을까 걱정된다")
                         }
                     }
-                    .buttonStyle(FatSelctButton())
+                    .buttonStyle(LongSelctButtonWithNoStroke())
                     .background(NavigationLink(
-                        destination: bubbleView(gotostartView: $gotostartView),
+                        destination: bubbleView(gotostartView: $gotostartView,userScore: userScore),
                         isActive: $gotoView3,
                         label: {EmptyView()}
                     )
@@ -52,17 +55,18 @@ struct rainView: View {
                     Button(action: {
                         gotoView3 = true
                         PlayBGM.audioPlayer?.stop()
+                        userScore.addScore(select: "A")
                     }) {
                         ZStack{
                             Text("B   | ")
                                 .frame(maxWidth:280,alignment: .leading)
-                            Text("편안하고 감성적인 작은집")
-                                .frame(maxWidth:190,alignment: .leading)
+                            Text("약속 시간에 늦을까 걱정된다")
+
                         }
                     }
-                    .buttonStyle(FatSelctButton())
+                    .buttonStyle(LongSelctButtonWithNoStroke())
                     .background(NavigationLink(
-                        destination: bubbleView(gotostartView: $gotostartView),
+                        destination: bubbleView(gotostartView: $gotostartView,userScore: userScore),
                         isActive: $gotoView3,
                         label: {EmptyView()}
                     )
@@ -71,21 +75,22 @@ struct rainView: View {
                     Button(action: {
                         gotoView3 = true
                         PlayBGM.audioPlayer?.stop()
+                        userScore.addScore(select: "B")
                     }) {
                         ZStack{
                             Text("C   | ")
                                 .frame(maxWidth:280,alignment: .leading)
-                            VStack{
-                                Text("거리에 펼쳐진 형형색색의 우산들")
-                                    .frame(maxWidth:240,alignment: .trailing)
-                            }
+                            Text("편안하고 감성적인 작은집")
+                                .frame(maxWidth:190,alignment: .leading)
+  
+
 
                         
                         }
                     }
-                    .buttonStyle(FatSelctButton())
+                    .buttonStyle(LongSelctButtonWithNoStroke())
                     .background(NavigationLink(
-                        destination: bubbleView(gotostartView: $gotostartView),
+                        destination: bubbleView(gotostartView: $gotostartView,userScore: userScore),
                         isActive: $gotoView3,
                         label: {EmptyView()}
                     )
@@ -94,27 +99,25 @@ struct rainView: View {
                     Button(action: {
                         gotoView3 = true
                         PlayBGM.audioPlayer?.stop()
+                        userScore.addScore(select: "C")
                     }) {
                         ZStack{
                             Text("D   | ")
                                 .frame(maxWidth:280,alignment: .leading)
-                            VStack{
-                                Text("한 사람이 팔을벌려 비를 맞고있다")
-                                    .frame(maxWidth:250,alignment: .trailing)
-                            }
-                            
+                            Text("거리에 펼쳐진 형형색색의 우산들")
+                                .frame(maxWidth:240,alignment: .trailing)
                             
                         }
                     }
-                    .buttonStyle(FatSelctButton())
+                    .buttonStyle(LongSelctButtonWithNoStroke())
                     .background(NavigationLink(
-                        destination: bubbleView(gotostartView: $gotostartView),
+                        destination: bubbleView(gotostartView: $gotostartView,userScore: userScore),
                         isActive: $gotoView3,
                         label: {EmptyView()}
                     )
                         .isDetailLink(false)
                     )
-                }            .padding(EdgeInsets(top: 0, leading: 0, bottom: 130, trailing: 0))
+                }
             }
         }
         .navigationBarTitle("", displayMode: .automatic)
@@ -124,6 +127,6 @@ struct rainView: View {
 
 struct rainView_Previews: PreviewProvider {
     static var previews: some View {
-        rainView(gotostartView: .constant(false))
+        rainView(gotostartView: .constant(false),userScore: Score())
     }
 }
