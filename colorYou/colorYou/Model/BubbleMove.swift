@@ -10,7 +10,6 @@ public struct BubbleMove: View {
     public init() {}
     public var body: some View {
         ZStack {
-            ForEach(0...1, id: \.self) { index in
                 LottieView(state: state1)
                     .blendMode(.screen)
                     .rotationEffect(Angle(degrees: CGFloat.random(in: -360...360)))
@@ -23,7 +22,6 @@ public struct BubbleMove: View {
                     .blendMode(.screen)
                     .rotationEffect(Angle(degrees: CGFloat.random(in: -360...360)))
                     .scaleEffect(CGFloat.random(in: 0.7...1.0))
-            }
         }
     }
 }

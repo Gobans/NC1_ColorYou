@@ -54,6 +54,7 @@
 		919CECD8281B938600485731 /* TypingScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CECD7281B938600485731 /* TypingScene.swift */; };
 		91B44945281BC4C400D8BF73 /* LottieOpenDoor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B44944281BC4C400D8BF73 /* LottieOpenDoor.swift */; };
 		91B4494E281BE1A200D8BF73 /* ComponentStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B4494D281BE1A200D8BF73 /* ComponentStyle.swift */; };
+		91C387EA2828A9AA001D05CA /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C387E92828A9AA001D05CA /* HapticManager.swift */; };
 		91DAAB472822180E00E522CA /* Wave.json in Resources */ = {isa = PBXBuildFile; fileRef = 91DAAB462822180E00E522CA /* Wave.json */; };
 		91DAAB4B28222C1B00E522CA /* Whale.json in Resources */ = {isa = PBXBuildFile; fileRef = 91DAAB4A28222C1B00E522CA /* Whale.json */; };
 		91DF69F8281A1E27004FEC2E /* colorYouApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DF69F7281A1E27004FEC2E /* colorYouApp.swift */; };
@@ -111,6 +112,7 @@
 		919CECD7281B938600485731 /* TypingScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypingScene.swift; sourceTree = "<group>"; };
 		91B44944281BC4C400D8BF73 /* LottieOpenDoor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieOpenDoor.swift; sourceTree = "<group>"; };
 		91B4494D281BE1A200D8BF73 /* ComponentStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentStyle.swift; sourceTree = "<group>"; };
+		91C387E92828A9AA001D05CA /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		91DAAB462822180E00E522CA /* Wave.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Wave.json; sourceTree = "<group>"; };
 		91DAAB4A28222C1B00E522CA /* Whale.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Whale.json; sourceTree = "<group>"; };
 		91DF69F4281A1E27004FEC2E /* colorYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = colorYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -198,10 +200,11 @@
 			children = (
 				918CAF6C281F89F4008D45CA /* Sound */,
 				913BBC39281D24B30086E255 /* Lottie */,
-				919CECD2281B811700485731 /* BubbleMove.swift */,
 				919CECD7281B938600485731 /* TypingScene.swift */,
+				919CECD2281B811700485731 /* BubbleMove.swift */,
 				912A294F28210C8D005AB48A /* TestData.swift */,
 				91B4494D281BE1A200D8BF73 /* ComponentStyle.swift */,
+				91C387E92828A9AA001D05CA /* HapticManager.swift */,
 			);
 			name = Model;
 			path = colorYou/Model;
@@ -389,6 +392,7 @@
 				919CECC9281B6A6700485731 /* bubbleView.swift in Sources */,
 				919CECB9281B667900485731 /* startView.swift in Sources */,
 				91F134F3281D864900D519DE /* LottieCircleWave.swift in Sources */,
+				91C387EA2828A9AA001D05CA /* HapticManager.swift in Sources */,
 				918CAF61281F8350008D45CA /* LottieBurning.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

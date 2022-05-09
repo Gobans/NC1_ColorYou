@@ -33,6 +33,7 @@ struct burningView: View {
                 }
                 VStack(spacing: 50){
                     Button(action: {
+                        HapticManager.instance.impact(style: .medium)
                         gotoView9 = true
                         PlayBGM.audioPlayer?.stop()
                         userScore.addScore(select: "A")
@@ -52,6 +53,7 @@ struct burningView: View {
                         .isDetailLink(false)
                     )
                     Button(action: {
+                        HapticManager.instance.impact(style: .medium)
                         gotoView9 = true
                         PlayBGM.audioPlayer?.stop()
                         userScore.addScore(select: "B")
@@ -71,6 +73,7 @@ struct burningView: View {
                         .isDetailLink(false)
                     )
                     Button(action: {
+                        HapticManager.instance.impact(style: .medium)
                         gotoView9 = true
                         PlayBGM.audioPlayer?.stop()
                         userScore.addScore(select: "C")
@@ -90,6 +93,7 @@ struct burningView: View {
                         .isDetailLink(false)
                     )
                     Button(action: {
+                        HapticManager.instance.impact(style: .medium)
                         gotoView9 = true
                         PlayBGM.audioPlayer?.stop()
                         userScore.addScore(select: "D")

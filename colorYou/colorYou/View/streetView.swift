@@ -25,6 +25,7 @@ struct streetView: View {
                 LottieStreetView
                     .frame(height:320)
                     .onTapGesture {
+                        HapticManager.instance.impact(style: .light)
                         LottieStreetView.animationView.play()
                         PlayBGM.playSounds(soundfile: "StreetSound.mp3")
                         clickGuide = true
@@ -33,6 +34,7 @@ struct streetView: View {
                     LottieClick(filename: "Click")
                         .frame(width: 150, height: 150)
                         .onTapGesture {
+                            HapticManager.instance.impact(style: .light)
                             PlayBGM.playSounds(soundfile: "StreetSound.mp3")
                             LottieStreetView.animationView.play()
                             clickGuide = true
@@ -43,6 +45,7 @@ struct streetView: View {
             //button
             VStack(spacing: 50){
                 Button(action: {
+                    HapticManager.instance.impact(style: .medium)
                     gotoView7 = true
                     PlayBGM.audioPlayer?.stop()
                     userScore.addScore(select: "C")
@@ -64,6 +67,7 @@ struct streetView: View {
                     .isDetailLink(false)
                 )
                 Button(action: {
+                    HapticManager.instance.impact(style: .medium)
                     gotoView7 = true
                     PlayBGM.audioPlayer?.stop()
                     userScore.addScore(select: "A")
@@ -83,6 +87,7 @@ struct streetView: View {
                     .isDetailLink(false)
                 )
                 Button(action: {
+                    HapticManager.instance.impact(style: .medium)
                     gotoView7 = true
                     PlayBGM.audioPlayer?.stop()
                     userScore.addScore(select: "D")
@@ -103,6 +108,7 @@ struct streetView: View {
                     .isDetailLink(false)
                 )
                 Button(action: {
+                    HapticManager.instance.impact(style: .medium)
                     gotoView7 = true
                     PlayBGM.audioPlayer?.stop()
                     userScore.addScore(select: "B")

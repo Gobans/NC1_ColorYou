@@ -23,6 +23,7 @@ struct waveView: View {
                 LottieBeachView
                     .frame(height:340)
                     .onTapGesture {
+                        HapticManager.instance.impact(style: .light)
                         PlayBGM.playSoundsOnce(soundfile: "WaveSound.mp3")
                         clickGuide = true
                         textGuide = "이 소리를 들으면"
@@ -34,6 +35,7 @@ struct waveView: View {
                     LottieClick(filename: "Click")
                         .frame(width: 150, height: 150)
                         .onTapGesture {
+                            HapticManager.instance.impact(style: .light)
                             PlayBGM.playSoundsOnce(soundfile: "WaveSound.mp3")
                             clickGuide = true
                             textGuide = "이 소리를 들으면"
@@ -58,6 +60,7 @@ struct waveView: View {
             //button
             VStack(spacing: 50){
                 Button(action: {
+                    HapticManager.instance.impact(style: .medium)
                     if !clickGuide{
                         wrongDirectionguide = true
                         textGuide = "화면을 클릭해주세요!"
@@ -86,6 +89,7 @@ struct waveView: View {
                 )
                 .background(Color.white)
                 Button(action: {
+                    HapticManager.instance.impact(style: .medium)
                     if !clickGuide{
                         wrongDirectionguide = true
                         textGuide = "화면을 클릭해주세요!"
@@ -112,6 +116,7 @@ struct waveView: View {
                     .isDetailLink(false)
                 )
                 Button(action: {
+                    HapticManager.instance.impact(style: .medium)
                     if !clickGuide{
                         wrongDirectionguide = true
                         textGuide = "화면을 클릭해주세요!"
@@ -138,6 +143,7 @@ struct waveView: View {
                     .isDetailLink(false)
                 )
                 Button(action: {
+                    HapticManager.instance.impact(style: .medium)
                     if !clickGuide{
                         wrongDirectionguide = true
                         textGuide = "화면을 클릭해주세요!"

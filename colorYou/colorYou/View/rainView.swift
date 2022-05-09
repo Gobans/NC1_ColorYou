@@ -32,6 +32,7 @@ struct rainView: View {
                 }
                 VStack(spacing:50){
                     Button(action: {
+                        HapticManager.instance.impact(style: .medium)
                         gotoView3 = true
                         PlayBGM.audioPlayer?.stop()
                         userScore.addScore(select: "D")
@@ -53,6 +54,7 @@ struct rainView: View {
                         .isDetailLink(false)
                     )
                     Button(action: {
+                        HapticManager.instance.impact(style: .medium)
                         gotoView3 = true
                         PlayBGM.audioPlayer?.stop()
                         userScore.addScore(select: "A")
@@ -73,6 +75,7 @@ struct rainView: View {
                         .isDetailLink(false)
                     )
                     Button(action: {
+                        HapticManager.instance.impact(style: .medium)
                         gotoView3 = true
                         PlayBGM.audioPlayer?.stop()
                         userScore.addScore(select: "B")
@@ -97,6 +100,7 @@ struct rainView: View {
                         .isDetailLink(false)
                     )
                     Button(action: {
+                        HapticManager.instance.impact(style: .medium)
                         gotoView3 = true
                         PlayBGM.audioPlayer?.stop()
                         userScore.addScore(select: "C")

@@ -30,6 +30,7 @@ struct bubbleView: View {
                 }
                 VStack(spacing:50){
                     Button(action: {
+                        HapticManager.instance.impact(style: .medium)
                         gotoView10 = true
                         PlayBGM.audioPlayer?.stop()
                     }) {
@@ -48,6 +49,7 @@ struct bubbleView: View {
                         .isDetailLink(false)
                     )
                     Button(action: {
+                        HapticManager.instance.impact(style: .medium)
                         gotoView10 = true
                         PlayBGM.audioPlayer?.stop()
                     }) {
@@ -66,6 +68,7 @@ struct bubbleView: View {
                         .isDetailLink(false)
                     )
                     Button(action: {
+                        HapticManager.instance.impact(style: .medium)
                         gotoView10 = true
                         PlayBGM.audioPlayer?.stop()
                     }) {
@@ -84,6 +87,7 @@ struct bubbleView: View {
                         .isDetailLink(false)
                     )
                     Button(action: {
+                        HapticManager.instance.impact(style: .medium)
                         gotoView10 = true
                         PlayBGM.audioPlayer?.stop()
                     }) {

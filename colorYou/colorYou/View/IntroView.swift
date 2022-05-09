@@ -20,6 +20,7 @@ struct IntroView: View {
                         PlayBGM.playSounds(soundfile: "IntroSound.mp3")
                     })
                 Button(action: {
+                    HapticManager.instance.impact(style: .heavy)
                     gotoStartView = true
                     PlayBGM.audioPlayer?.stop()
                 }){

@@ -167,6 +167,7 @@ struct resultView: View {
                             .padding()
                             HStack(spacing:30){
                                 Button("고반의 컬러는?") {
+                                    HapticManager.instance.impact(style: .medium)
                                     gotoView12 = true
                                 }
                                 .background(                                NavigationLink(
@@ -178,6 +179,7 @@ struct resultView: View {
                                 .background(userResultModel.titleColor)
                                 .cornerRadius(20)
                                 Button("다시하기") {
+                                    HapticManager.instance.impact(style: .medium)
                                     gotostartView = false
                                 }
                                 .buttonStyle(GrowingButton2())

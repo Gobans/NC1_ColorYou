@@ -25,6 +25,7 @@ struct doorView: View {
                 LottieOpenDoorView
                     .frame(height:320)
                     .onTapGesture {
+                        HapticManager.instance.impact(style: .light)
                         LottieOpenDoorView.animationView.play()
                         PlayBGM.playSoundsOnce(soundfile: "DoorOpenSound.mp3")
                         clickGuide = true
@@ -33,6 +34,7 @@ struct doorView: View {
                     LottieClick(filename: "Click")
                         .frame(width: 150, height: 150)
                         .onTapGesture {
+                            HapticManager.instance.impact(style: .light)
                             PlayBGM.playSoundsOnce(soundfile: "DoorOpenSound.mp3")
                             LottieOpenDoorView.animationView.play()
                             clickGuide = true
@@ -42,6 +44,7 @@ struct doorView: View {
             //button
             VStack(spacing: 50){
                 Button(action: {
+                    HapticManager.instance.impact(style: .medium)
                     gotoView6 = true
                     PlayBGM.audioPlayer?.stop()
                     userScore.addScore(select: "D")
@@ -62,6 +65,7 @@ struct doorView: View {
                     .isDetailLink(false)
                 )
                 Button(action: {
+                    HapticManager.instance.impact(style: .medium)
                     gotoView6 = true
                     PlayBGM.audioPlayer?.stop()
                     userScore.addScore(select: "B")
@@ -82,6 +86,7 @@ struct doorView: View {
                     .isDetailLink(false)
                 )
                 Button(action: {
+                    HapticManager.instance.impact(style: .medium)
                     gotoView6 = true
                     PlayBGM.audioPlayer?.stop()
                     userScore.addScore(select: "A")
@@ -102,6 +107,7 @@ struct doorView: View {
                     .isDetailLink(false)
                 )
                 Button(action: {
+                    HapticManager.instance.impact(style: .medium)
                     gotoView6 = true
                     PlayBGM.audioPlayer?.stop()
                     userScore.addScore(select: "C")

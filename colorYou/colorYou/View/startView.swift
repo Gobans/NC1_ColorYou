@@ -51,6 +51,7 @@ struct startView: View {
                     .opacity(0.00001)
                     .onTapGesture {
                         PlayBGM2.playSoundsOnce(soundfile: "BubbleSound.mp3")
+                        HapticManager.instance.impact(style: .light)
                         firstGuide = true
                         textGuide = "좋아요! 테스트 때 방금처럼"
                         textGuide2 = "터치 애니메이션이 있다면 클릭해주세요"
@@ -59,6 +60,7 @@ struct startView: View {
                 .padding(EdgeInsets(top: 0, leading: 0, bottom: 80, trailing: 0))
                 
                 Button(action: {
+                    HapticManager.instance.impact(style: .medium)
                     gotoView2 = true
                     userScore.resetScore()
                     PlayBGM.audioPlayer?.stop()

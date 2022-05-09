@@ -19,9 +19,9 @@ struct nameView: View {
                 Text("당신의 이름은 무엇인가요?")
                 TextField("당신의 이름은?", text: $userName)
                 Button(action: {
+                    HapticManager.instance.impact(style: .medium)
                     gotoView11 = true
                     userResult = userScore.returnResult()
-                    print(userScore)
                     userResultModel = resultModel(userResult: userResult)
                 }) {
                     Text("결과보기")

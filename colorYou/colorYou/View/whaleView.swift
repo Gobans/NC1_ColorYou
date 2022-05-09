@@ -26,6 +26,7 @@ struct whaleView: View {
                     LottieWhaleView
                         .frame(height:320)
                         .onTapGesture {
+                            HapticManager.instance.impact(style: .light)
                             PlayBGM.playSoundsOnce(soundfile: "WhaleSound.mp3")
                             clickGuide = true
                             LottieWhaleView.animationView.play()
@@ -35,6 +36,7 @@ struct whaleView: View {
                         LottieClick(filename: "Click")
                             .frame(width: 150, height: 150)
                             .onTapGesture {
+                                HapticManager.instance.impact(style: .light)
                                 PlayBGM.playSoundsOnce(soundfile: "WhaleSound.mp3")
                                 clickGuide = true
                                 LottieWhaleView.animationView.play()
@@ -45,6 +47,7 @@ struct whaleView: View {
                 //button
                 VStack(spacing: 50){
                     Button(action: {
+                        HapticManager.instance.impact(style: .medium)
                         gotoView8 = true
                         PlayBGM.audioPlayer?.stop()
                         userScore.addScore(select: "B")
@@ -66,6 +69,7 @@ struct whaleView: View {
                         .isDetailLink(false)
                     )
                     Button(action: {
+                        HapticManager.instance.impact(style: .medium)
                         gotoView8 = true
                         PlayBGM.audioPlayer?.stop()
                         userScore.addScore(select: "D")
@@ -86,6 +90,7 @@ struct whaleView: View {
                         .isDetailLink(false)
                     )
                     Button(action: {
+                        HapticManager.instance.impact(style: .medium)
                         gotoView8 = true
                         PlayBGM.audioPlayer?.stop()
                         userScore.addScore(select: "C")
@@ -106,6 +111,7 @@ struct whaleView: View {
                         .isDetailLink(false)
                     )
                     Button(action: {
+                        HapticManager.instance.impact(style: .medium)
                         gotoView8 = true
                         PlayBGM.audioPlayer?.stop()
                         userScore.addScore(select: "A")
