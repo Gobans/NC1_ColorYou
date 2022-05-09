@@ -9,6 +9,7 @@ Sound color test for fun. Based on Tom Maddron's living your colors.
 
 - Sound
 - Animation (Lottie)
+- Haptic
 - Test reuslt based on [living your colors](https://www.amazon.com/Living-Your-Colors-Practical-Wisdom/dp/0446679119)
 
 
