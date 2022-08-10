@@ -15,7 +15,7 @@ Sound color test for fun. Based on Tom Maddron's living your colors.
 
 ## :people_hugging: Authors
 
-- [@Gobans](https://www.github.com/https://github.com/Gobans)
+- [@Gobans](https://github.com/Gobans)
 
 
 ## :framed_picture: Demo
