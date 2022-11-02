@@ -49,6 +49,7 @@ https://youtu.be/SBDrVyEkwGM
 
 ## :sparkles: Skills & Tech Stack
 swiftUI
+Lottie
 
 ## :lock_with_ink_pen: License
 
